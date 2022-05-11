@@ -44,3 +44,11 @@ def BookMark(MyBM):
             print(MyBM[i])
             i+=1
         
+        
+def ordermap(oldmap):
+    mylist=list(oldmap.keys())
+    mylist.sort()
+    newmap = dict()
+    for i in mylist:
+        newmap[i]=oldmap[i]
+    return(newmap)
